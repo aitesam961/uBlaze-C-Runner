@@ -1,0 +1,139 @@
+23:36:37 INFO  : Registering command handlers for SDK TCF services
+23:36:38 INFO  : Launching XSCT server: xsct.bat -interactive C:\Users\atsm\Documents\Vivado\uBlaze_ARTY_A7\temp_xsdb_launch_script.tcl
+23:36:40 INFO  : XSCT server has started successfully.
+23:36:40 INFO  : Successfully done setting XSCT server connection channel  
+23:36:40 INFO  : Successfully done setting SDK workspace  
+23:36:55 ERROR : The Hardware Project referenced by this BSP (ARTY_uBlaze_TEST_bsp) was not found in this workspace. As a result, this BSP will not build properly. To fix this error, please import the associated hardware project or recreate a new BSP targeting an existing hardware platform.
+23:37:10 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+23:38:38 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+23:39:31 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Arty 210319788810A" && level==0} -index 0' command is executed.
+23:39:31 INFO  : 'fpga -state' command is executed.
+23:39:31 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+23:39:31 INFO  : Jtag cable 'Digilent Arty 210319788810A' is selected.
+23:39:31 INFO  : 'jtag frequency' command is executed.
+23:39:31 INFO  : 'configparams mdm-detect-bscan-mask 2' command is executed.
+23:39:31 INFO  : Context for processor 'microblaze_0' is selected.
+23:39:31 INFO  : Processor reset is completed for 'microblaze_0'.
+23:39:32 INFO  : Context for processor 'microblaze_0' is selected.
+23:39:32 INFO  : The application 'C:/Users/atsm/Documents/Vivado/uBlaze_ARTY_A7/uBlaze_ARTY_A7.sdk/ARTY_uBlaze_TEST/Debug/ARTY_uBlaze_TEST.elf' is downloaded to processor 'microblaze_0'.
+23:39:32 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+configparams mdm-detect-bscan-mask 2
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent Arty 210319788810A"} -index 0
+rst -processor
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent Arty 210319788810A"} -index 0
+dow C:/Users/atsm/Documents/Vivado/uBlaze_ARTY_A7/uBlaze_ARTY_A7.sdk/ARTY_uBlaze_TEST/Debug/ARTY_uBlaze_TEST.elf
+----------------End of Script----------------
+
+23:39:32 INFO  : Memory regions updated for context PA
+23:39:32 INFO  : Memory regions updated for context MicroBlaze Debug Module at USER2
+23:39:32 INFO  : Context for processor 'microblaze_0' is selected.
+23:39:32 INFO  : 'con' command is executed.
+23:39:32 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent Arty 210319788810A"} -index 0
+con
+----------------End of Script----------------
+
+23:39:32 INFO  : Launch script is exported to file 'C:\Users\atsm\Documents\Vivado\uBlaze_ARTY_A7\.sdk\launch_scripts\xilinx_c-c++_application_(system_debugger)\system_debugger_using_debug_arty_ublaze_test.elf_on_local.tcl'
+23:40:10 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+23:40:10 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Arty 210319788810A" && level==0} -index 0' command is executed.
+23:40:11 INFO  : FPGA configured successfully with bitstream "C:/Users/atsm/Documents/Vivado/uBlaze_ARTY_A7/uBlaze_ARTY_A7.sdk/ARTY_A7_wrapper_hw_platform_0/download.bit"
+23:40:36 INFO  : Disconnected from the channel tcfchan#1.
+23:40:37 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Arty 210319788810A" && level==0} -index 0' command is executed.
+23:40:37 INFO  : 'fpga -state' command is executed.
+23:40:37 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+23:40:37 INFO  : Jtag cable 'Digilent Arty 210319788810A' is selected.
+23:40:37 INFO  : 'jtag frequency' command is executed.
+23:40:37 INFO  : 'configparams mdm-detect-bscan-mask 2' command is executed.
+23:40:37 INFO  : Context for processor 'microblaze_0' is selected.
+23:40:37 INFO  : Processor reset is completed for 'microblaze_0'.
+23:40:37 INFO  : Context for processor 'microblaze_0' is selected.
+23:40:37 INFO  : The application 'C:/Users/atsm/Documents/Vivado/uBlaze_ARTY_A7/uBlaze_ARTY_A7.sdk/ARTY_uBlaze_TEST/Debug/ARTY_uBlaze_TEST.elf' is downloaded to processor 'microblaze_0'.
+23:40:37 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+configparams mdm-detect-bscan-mask 2
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent Arty 210319788810A"} -index 0
+rst -processor
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent Arty 210319788810A"} -index 0
+dow C:/Users/atsm/Documents/Vivado/uBlaze_ARTY_A7/uBlaze_ARTY_A7.sdk/ARTY_uBlaze_TEST/Debug/ARTY_uBlaze_TEST.elf
+----------------End of Script----------------
+
+23:40:37 INFO  : Memory regions updated for context PA
+23:40:37 INFO  : Memory regions updated for context MicroBlaze Debug Module at USER2
+23:40:37 INFO  : Context for processor 'microblaze_0' is selected.
+23:40:37 INFO  : 'con' command is executed.
+23:40:37 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent Arty 210319788810A"} -index 0
+con
+----------------End of Script----------------
+
+23:40:37 INFO  : Launch script is exported to file 'C:\Users\atsm\Documents\Vivado\uBlaze_ARTY_A7\.sdk\launch_scripts\xilinx_c-c++_application_(system_debugger)\system_debugger_using_debug_arty_ublaze_test.elf_on_local.tcl'
+23:51:20 INFO  : Disconnected from the channel tcfchan#2.
+00:06:30 INFO  : Registering command handlers for SDK TCF services
+00:06:30 INFO  : Launching XSCT server: xsct.bat -interactive C:\Users\atsm\Documents\Vivado\uBlaze_ARTY_A7\temp_xsdb_launch_script.tcl
+00:06:32 INFO  : XSCT server has started successfully.
+00:06:33 INFO  : Successfully done setting XSCT server connection channel  
+00:06:33 INFO  : Successfully done setting SDK workspace  
+00:07:07 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+00:07:07 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Arty 210319788810A" && level==0} -index 0' command is executed.
+00:07:08 INFO  : FPGA configured successfully with bitstream "C:/Users/atsm/Documents/Vivado/uBlaze_ARTY_A7/uBlaze_ARTY_A7.sdk/ARTY_A7_wrapper_hw_platform_0/download.bit"
+00:07:17 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Arty 210319788810A" && level==0} -index 0' command is executed.
+00:07:17 INFO  : 'fpga -state' command is executed.
+00:07:17 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+00:07:18 INFO  : Jtag cable 'Digilent Arty 210319788810A' is selected.
+00:07:18 INFO  : 'jtag frequency' command is executed.
+00:07:18 INFO  : 'configparams mdm-detect-bscan-mask 2' command is executed.
+00:07:18 INFO  : Context for processor 'microblaze_0' is selected.
+00:07:18 INFO  : Processor reset is completed for 'microblaze_0'.
+00:07:18 INFO  : Context for processor 'microblaze_0' is selected.
+00:07:18 INFO  : The application 'C:/Users/atsm/Documents/Vivado/uBlaze_ARTY_A7/uBlaze_ARTY_A7.sdk/ARTY_uBlaze_TEST/Debug/ARTY_uBlaze_TEST.elf' is downloaded to processor 'microblaze_0'.
+00:07:18 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+configparams mdm-detect-bscan-mask 2
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent Arty 210319788810A"} -index 0
+rst -processor
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent Arty 210319788810A"} -index 0
+dow C:/Users/atsm/Documents/Vivado/uBlaze_ARTY_A7/uBlaze_ARTY_A7.sdk/ARTY_uBlaze_TEST/Debug/ARTY_uBlaze_TEST.elf
+----------------End of Script----------------
+
+00:07:18 INFO  : Memory regions updated for context PA
+00:07:18 INFO  : Memory regions updated for context MicroBlaze Debug Module at USER2
+00:07:18 INFO  : Context for processor 'microblaze_0' is selected.
+00:07:18 INFO  : 'con' command is executed.
+00:07:18 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent Arty 210319788810A"} -index 0
+con
+----------------End of Script----------------
+
+00:07:18 INFO  : Launch script is exported to file 'C:\Users\atsm\Documents\Vivado\uBlaze_ARTY_A7\.sdk\launch_scripts\xilinx_c-c++_application_(system_debugger)\system_debugger_using_debug_arty_ublaze_test.elf_on_local.tcl'
+00:08:15 INFO  : Disconnected from the channel tcfchan#1.
+00:08:16 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Arty 210319788810A" && level==0} -index 0' command is executed.
+00:08:16 INFO  : 'fpga -state' command is executed.
+00:08:16 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+00:08:16 INFO  : Jtag cable 'Digilent Arty 210319788810A' is selected.
+00:08:16 INFO  : 'jtag frequency' command is executed.
+00:08:16 INFO  : 'configparams mdm-detect-bscan-mask 2' command is executed.
+00:08:16 INFO  : Context for processor 'microblaze_0' is selected.
+00:08:16 INFO  : Processor reset is completed for 'microblaze_0'.
+00:08:16 INFO  : Context for processor 'microblaze_0' is selected.
+00:08:16 INFO  : The application 'C:/Users/atsm/Documents/Vivado/uBlaze_ARTY_A7/uBlaze_ARTY_A7.sdk/ARTY_uBlaze_TEST/Debug/ARTY_uBlaze_TEST.elf' is downloaded to processor 'microblaze_0'.
+00:08:16 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+configparams mdm-detect-bscan-mask 2
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent Arty 210319788810A"} -index 0
+rst -processor
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent Arty 210319788810A"} -index 0
+dow C:/Users/atsm/Documents/Vivado/uBlaze_ARTY_A7/uBlaze_ARTY_A7.sdk/ARTY_uBlaze_TEST/Debug/ARTY_uBlaze_TEST.elf
+----------------End of Script----------------
+
+00:08:16 INFO  : Memory regions updated for context PA
+00:08:16 INFO  : Memory regions updated for context MicroBlaze Debug Module at USER2
+00:08:16 INFO  : Context for processor 'microblaze_0' is selected.
+00:08:16 INFO  : 'con' command is executed.
+00:08:16 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent Arty 210319788810A"} -index 0
+con
+----------------End of Script----------------
+
+00:08:16 INFO  : Launch script is exported to file 'C:\Users\atsm\Documents\Vivado\uBlaze_ARTY_A7\.sdk\launch_scripts\xilinx_c-c++_application_(system_debugger)\system_debugger_using_debug_arty_ublaze_test.elf_on_local.tcl'
+00:09:48 INFO  : Disconnected from the channel tcfchan#2.

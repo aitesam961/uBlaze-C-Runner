@@ -1,0 +1,6 @@
+12:14:07 **** Incremental Build of configuration Debug for project ARTY_uBlaze_TEST ****
+make all 
+make: Nothing to be done for `all'.
+
+12:14:07 Build Finished (took 184ms)
+
